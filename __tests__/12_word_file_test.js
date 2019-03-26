@@ -16,4 +16,15 @@ describe('Word file test02.doc', () => {
         return done();
       });
   });
+
+  it('should return an object of four parts', (done) => {
+    const extract = extractor.extractWithStyles(path.resolve(__dirname, "data/test02.doc"));
+    return extract.then(result => {
+      expect(result['WordDocument']).toBeDefined();
+      expect(result['Data']).toBeDefined();
+      // expect(result['0Table']).toBeDefined();
+      // expect(result['1Table']).toBeDefined();
+      done();
+    });
+  });
 });
