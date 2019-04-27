@@ -40,7 +40,7 @@ const def = {
       // 0x0101 0x0088
       // 0x010C 0x00A4
       // 0x0112 0x00B7
-      // TODO: Fill in figRgFcLcbBlob data only if a need arises
+      // TODO: Fill in figRgFcLcbBlob data only if a need arises`
       fibRgFcLcbBlob_c1: {  // Version 97: 93 q-words
       },
       fibRgFcLcbBlob_d9_extension: {  // Version 2000: 15 extra q-words => 108 total
